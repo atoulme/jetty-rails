@@ -1,5 +1,5 @@
 module JettyRails
-  
+
   require "jetty-6.1.9"
   require "servlet-api-2.5-6.1.9"
   require "jetty-util-6.1.9"
@@ -17,11 +17,11 @@ module JettyRails
     end
   end
 
-  require "jruby-rack-0.9"
+  require "jruby-rack-0.9.2"
   module Rack
     include_package "org.jruby.rack"
     include_package "org.jruby.rack.rails"
     include_package "org.jruby.rack.merb"
   end
-  
+
 end
